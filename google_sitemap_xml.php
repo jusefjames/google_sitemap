@@ -324,7 +324,7 @@ function compressSitemapFile($fname)
 {
     if (file_exists($fname))
     {
-        system("gzip -q -9 ".$fname);
+        system("gzip -r -q -9 ".$fname);
     }
     return;
 }
